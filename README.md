@@ -27,3 +27,7 @@ Website to send code blocks and normal chats to others.
 * Markdown
 * Bash
 * Tex
+
+## In Action
+
+![Image of site](./img.jpg)
