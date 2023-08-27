@@ -31,3 +31,16 @@ Website to send code blocks and normal chats to others.
 ## In Action
 
 ![Image of site](./img.jpg)
+
+## TODO
+
+- [x] **Syntax Highlighting**: Get syntax highlighting to work for a multitude of languages.
+- [x] **Guess File Extension**: Get file extension from code blocks not defined with code(just filename).
+	- Create `pre` & `code` elements & append code from local FTP to code block.
+- [] **File Content**: Appending code from local FTP to code block doesn't work since it thinks it's security issue.
+	-Tried running by hosting on local server on local machine, but it didn't work.
+- [] **PHP**: Change `index.html` to `index.php` to use embedded php code in index file for php server to connect w/ SQL server.
+	-Tried it & ran on local server w/ PHP extension on VS Code, but it didn't echo the message w/ inline PHP embedded in `index` file.
+- [] **Input Sanitization**: Sanitize input of code blocks and files for XSS attacks.
+- [] **SQL Database & PHP Server**: Create PHP server & SQL database after get PHP test code to work with `index.php`.
+- [] **Encryption***(optional)*: Encrypt data w/ SHA or AES encryption.

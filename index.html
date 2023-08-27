@@ -11,6 +11,7 @@
 	<div class="box">
 		<div class="filename">example.js</div>
 		<pre class="code">
+			<code>
 			// This is a code block
 			function factorial(n) {
 				return n == 0 ? 1 : factorial(n-1);
@@ -19,11 +20,13 @@
 			 * multiline comment
 			 * :)
 			*/
+			</code>
 		</pre>
 	</div>
 	<div class="box">
 		<div class="filename">script.py</div>
 		<pre class="code">
+			<code>
 			# Another code block
 			def factorial(n):
 				if n == 0:
@@ -34,6 +37,7 @@
 			multiline comment
 			:)
 			"""
+			</code>
 		</pre>
 	</div>
 	<div class="box">
@@ -42,9 +46,9 @@
 			<code>
 			//badger
 			#include <iostream>
-			
+
 			using namespace std;
-			
+
 			//return the number of characters in a string where tabs are converted to their # of equivalent spaces.
 			int get_len(const string str){
 				int count=0;
@@ -67,7 +71,7 @@
 				}
 				return count;
 			}
-			
+
 			//format text.
 			string pad_txt(string text,int width,int pad=0,char padding_char=' '){
 				int text_length=get_len(text);
@@ -76,15 +80,15 @@
 				if(padding_length<=0){
 					return text;
 				}
-			
+
 				int left_padding_length=padding_length/2;
 				int right_padding_length=padding_length-left_padding_length;
 				string left_padding=string(left_padding_length,padding_char);
 				string right_padding=string(right_padding_length,padding_char);
-			
+
 				return left_padding+text+right_padding;
 			}
-			
+
 			string get_replace(string txt,string find,string replace){
 				size_t start_pos=0;
 				while((start_pos=txt.find(find,start_pos))!=string::npos){
@@ -93,61 +97,17 @@
 				}
 				return txt;
 			}
-			
+
 			int main(int argc,char** argv){
-				int i,j,rows;
-			
-				cout<<"Rows(35): ";cin>>rows;
-			
-				cout<<"\033[31m";
-			
-				string a1="";
-			
-				//top half.
-				for(i=rows/2;i<=rows;i+=2){
-					a1="";
-					for(j=1;j<rows-i;j+=2){
-						a1+=" ";
-					}
-					for(j=1;j<=i;j++){
-						a1+="*";
-					}
-					for(j=1;j<=rows-i;j++){
-						a1+=" ";
-					}
-					for(j=1;j<=i;j++){
-						a1+="*";
-					}
-					cout<<get_replace(a1,"*","♥")<<endl;
-				}
-			
-				cout<<"♥♥♥♥♥\033[32m"<<pad_txt("\tHAPPY MOTHER'S DAY!!!\t",get_len(a1),4)<<"\033[31m♥♥♥♥♥"<<endl;
-			
-				//reverse pyramid.
-				for(i=rows;i>=1;i--){
-					a1="";
-					for(j=i;j<rows;j++){
-						a1+=" ";
-					}
-					for(j=1;j<=(i*2)-1;j++){
-						a1+="*";
-					}
-					cout<<get_replace(a1,"*","♥")<<endl;
-				}
-			
-				cout<<"\033[0m";
-			
-				return 0;
+				//...
 			}
 		</code>
 		</pre>
 	</div>
 	<div class="box">
-		<div class="filename">test.py</div>
-		<pre class="code" class="filename">
-			this text should be replaced with "test.py" and syntax highlighted.
-		</pre>
+		<div class ="filename">test.py</div>
 	</div>
+	<script src="./languages.js"></script>
 	<script src="./script.js"></script>
 	<script src="./copy.js"></script>
 	<?php
